@@ -313,15 +313,6 @@ header::after {
   border-radius: 14px; 
 }
 
-/* ===== تكبير صورة بطاقة الدعم الفني ===== */
-.support-icon {
-  width: 165px !important;
-  height: 165px !important;
-  padding: 8px !important;
-  border-radius: 26px !important;
-}
-.support-icon img { border-radius: 20px !important; }
-
 .title {
   font-size: 1.35rem; 
   font-weight: 800;
@@ -622,16 +613,16 @@ button:hover {
 </div>
 
 <div class="tabs-container">
-  <button class="tab-btn" onclick="switchTab(event, 'apps-tab')">💎 الكل</button>
-  <button class="tab-btn active" onclick="switchTab(event, 'store-tab')">🏆 المتجر</button>
+  <button class="tab-btn active" onclick="switchTab(event, 'apps-tab')">💎 الكل</button>
+  <button class="tab-btn" onclick="switchTab(event, 'store-tab')">🏆 المتجر</button>
 </div>
 
-<div id="apps-tab" class="tab-content" style="display: none;">
+<div id="apps-tab" class="tab-content" style="display: block;">
   <div class="grid" id="appsGrid"><div class="empty-state"><i class="fas fa-box-open"></i>لا توجد تطبيقات حالياً<br><span style="font-size:0.9rem;opacity:0.8;font-weight:500;">سيتم إضافة التطبيقات قريباً</span></div></div>
 </div>
 
-<div id="store-tab" class="tab-content" style="display: block;">
-  <div class="grid" id="storeGrid"><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/Tqd3QMfz/IMG-20260422-175208-052.jpg" alt="مكتبة التطبيقات PRO"></div><div class="title">مكتبة التطبيقات PRO</div><div class="desc">HDMosul🚀🚀 • المتجر المتكامل من Android_AppsX يعمل بشكل صفحة وايب</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/tMgcg6tc/file-00000000e70c7243a5ef35f19d97eabc.png" alt="مكتبة التطبيقات Lite"></div><div class="title">مكتبة التطبيقات Lite</div><div class="desc">HDMosul🚀🚀 • Lite تطبيقات منوعة يعمل بشكل صفحة وايب</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/PvT20Ryk/aptoide-tv-icon.webp" alt="Android TV متجر"></div><div class="title">Android TV متجر</div><div class="desc">متجر تطبيقات مثل سوق بلي مجاني لأجهزة شاشات والتيفي بوكس وشاشات السيارات. HDMosul🚀🚀 •</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/hRBZsrch/aurora-store.webp" alt="AuroraStore"></div><div class="title">AuroraStore</div><div class="desc">متجر تطبيقات مثل سوق بلي مجاني لأجهزة شاشات والتيفي بوكس وشاشات السيارات. HDMosul🚀🚀 •</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/GfvKFPvh/emotn-store.webp" alt="متجر إيموتن"></div><div class="title">متجر إيموتن</div><div class="desc">متجر تطبيقات مثل سوق بلي مجاني لأجهزة شاشات والتيفي بوكس وشاشات السيارات HDMosul🚀🚀 •</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon support-icon"><img src="https://via.placeholder.com/100/6D28D9/ffffff?text=APP" alt="الدعم الفني"></div><div class="title">الدعم الفني</div><div class="desc">تلكرام</div><button class="luxury-btn" style="pointer-events: none;">امسح باركود</button></div></div>
+<div id="store-tab" class="tab-content" style="display: none;">
+  <div class="grid" id="storeGrid"><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/Tqd3QMfz/IMG-20260422-175208-052.jpg" alt="مكتبة التطبيقات PRO"></div><div class="title">مكتبة التطبيقات PRO</div><div class="desc">HDMosul🚀🚀 • المتجر المتكامل من Android_AppsX يعمل بشكل صفحة وايب</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/tMgcg6tc/file-00000000e70c7243a5ef35f19d97eabc.png" alt="مكتبة التطبيقات Lite"></div><div class="title">مكتبة التطبيقات Lite</div><div class="desc">HDMosul🚀🚀 • Lite تطبيقات منوعة يعمل بشكل صفحة وايب</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/PvT20Ryk/aptoide-tv-icon.webp" alt="Android TV متجر"></div><div class="title">Android TV متجر</div><div class="desc">متجر تطبيقات مثل سوق بلي مجاني لأجهزة شاشات والتيفي بوكس وشاشات السيارات. HDMosul🚀🚀 •</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/hRBZsrch/aurora-store.webp" alt="AuroraStore"></div><div class="title">AuroraStore</div><div class="desc">متجر تطبيقات مثل سوق بلي مجاني لأجهزة شاشات والتيفي بوكس وشاشات السيارات. HDMosul🚀🚀 •</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/GfvKFPvh/emotn-store.webp" alt="متجر إيموتن"></div><div class="title">متجر إيموتن</div><div class="desc">متجر تطبيقات مثل سوق بلي مجاني لأجهزة شاشات والتيفي بوكس وشاشات السيارات HDMosul🚀🚀 •</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://via.placeholder.com/100/6D28D9/ffffff?text=APP" alt="الدعم الفني"></div><div class="title">الدعم الفني</div><div class="desc">تلكرام</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div></div>
 </div>
 
 <footer>
@@ -854,8 +845,7 @@ function createAppCard(app, isStore) {
     ov.innerHTML = '<div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div>';
     card.appendChild(ov);
   }
-  var isSupportCard = /الدعم/.test(app.name || '');
-  var iconDiv = document.createElement('div'); iconDiv.className = 'app-icon' + (isSupportCard ? ' support-icon' : '');
+  var iconDiv = document.createElement('div'); iconDiv.className = 'app-icon';
   var img = document.createElement('img');
   img.src = extractImageUrl(app.icon) || 'https://via.placeholder.com/100/6D28D9/ffffff?text=APP';
   img.alt = app.name;
@@ -883,7 +873,7 @@ function createAppCard(app, isStore) {
       var btn = document.createElement('button');
       btn.className = 'luxury-btn' + (app.isPremiere ? ' premiere-btn' : '');
       btn.style.pointerEvents = 'none';
-      btn.textContent = app.isPremiere ? '🏆 PREMIERE 🏆' : (isSupportCard ? 'امسح باركود' : 'تحميل');
+      btn.textContent = app.isPremiere ? '🏆 PREMIERE 🏆' : 'تحميل';
       card.appendChild(btn);
     }
   }
