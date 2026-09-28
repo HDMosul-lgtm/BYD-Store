@@ -42,32 +42,6 @@ body {
   overflow-x: hidden;
   position: relative;
 }
-#ethicalNotice {
-  background: rgba(0, 0, 0, 0.9);
-  color: white;
-  text-align: center;
-  padding: 20px;
-  border-bottom: 3px solid var(--secondary-color);
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  box-sizing: border-box;
-}
-.notice-box {
-  background: linear-gradient(145deg, #0a2a4a, #003366);
-  border: 3px solid #febd11;
-  border-radius: 30px;
-  padding: 25px 15px;
-  max-width: 900px;
-  margin: 0 auto;
-  color: white;
-  box-shadow: 0 0 40px rgba(254, 189, 17, 0.6);
-}
-.notice-icon { font-size: 5vw; margin-bottom: 8px; color: #febd11; }
-.notice-text { font-size: 3.5vw; font-weight: 900; line-height: 1.6; margin: 0; }
-.notice-text span { color: #febd11; }
-.notice-sub { font-size: 2.2vw; margin-top: 15px; color: #febd11; font-weight: 700; }
-
 .theme-switcher {
   position: fixed; bottom: 20px; left: 20px; z-index: 9999;
   display: flex; gap: 8px; background: var(--card-bg); padding: 8px 12px;
@@ -279,22 +253,6 @@ button:hover { background: var(--secondary-color); color: black; }
 </head>
 
 <body data-theme="light">
-
-<!-- الملاحظة الأخلاقية -->
-<div id="ethicalNotice" style="display: none;">
-  <div class="notice-box">
-    <div class="notice-icon"><i class="fas fa-exclamation-triangle"></i></div>
-    <p class="notice-text">
-      تنبيه هام:<br>
-      جميع التطبيقات في هذا المتجر <span>مجانية لوجه الله تعالى</span>،<br>
-      ويُمنع <span>بيعها أو المتاجرة بها</span>.
-    </p>
-    <p class="notice-sub">
-      نخص بالذكر أصحاب المكاتب الذين يأخذون التطبيقات ويبيعونها للناس، فأنتم <span>غير مبري الذمة</span>.<br>
-      حقوق متجر @HDMosul
-    </p>
-  </div>
-</div>
 
 <div id="maintenanceOverlay" class="maintenance-overlay" style="display: none;">⚠️</div>
 
@@ -886,15 +844,6 @@ window.onload = function() {
   setInterval(updateClock, 1000);
   loadTheme();
 };
-})();
-</script>
-<script>
-(function() {
-  var notice = document.getElementById('ethicalNotice');
-  if (notice) {
-    notice.style.display = 'block';
-    setTimeout(function() { notice.style.display = 'none'; }, 6000);
-  }
 })();
 </script>
 
