@@ -67,17 +67,27 @@ body {
 .main-content.hidden { display: none; }
 
 header {
-  text-align: center; padding: 20px 0 10px;
+  text-align: center; padding: 30px 0 15px;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), transparent);
   border-bottom: 2px solid var(--secondary-color);
   margin-bottom: 20px;
 }
-.logo-container { display: flex; align-items: center; justify-content: center; margin-bottom: 5px; }
-#storeLogo {
-  width: 60px; filter: drop-shadow(0 5px 15px rgba(254, 189, 17, 0.3));
-  transition: transform 0.3s; cursor: pointer; border-radius: 50%;
+.logo-container { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  margin-bottom: 15px;
+  padding: 0 15px;
 }
-#storeLogo:hover { transform: scale(1.1); }
+#storeLogo {
+  width: 160px;
+  height: auto;
+  max-width: 90%;
+  filter: drop-shadow(0 8px 20px rgba(254, 189, 17, 0.4));
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+#storeLogo:hover { transform: scale(1.05); }
 #storeName {
   font-size: 2.8rem; font-weight: 900; line-height: 1.2;
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color) 50%, var(--secondary-color) 100%);
@@ -260,7 +270,7 @@ button:hover { background: var(--secondary-color); color: black; }
 
 <header>
   <div class="logo-container">
-    <img id="storeLogo" src="https://i.ibb.co/dwKGHRP0/sdv001272022-D1-QAN.png" alt="لوحة التحكم" onclick="openLoginModal()">
+    <img id="storeLogo" src="https://i.ibb.co/GfDZ7JH8/file-00000000bb00820abe21b502b70fcd96.png" alt="لوحة التحكم" onclick="openLoginModal()">
   </div>
   <h1 class="brand" id="storeName">BYD</h1>
   <div class="sub-brand">🏆 BYD STORE • VIP EXCLUSIVE 👑</div>
@@ -467,7 +477,7 @@ var DEFAULT_STORE = [
 var appsList = [], storeList = [];
 var storeSettings = {
   "name": "BYD",
-  "logoUrl": "https://i.ibb.co/dwKGHRP0/sdv001272022-D1-QAN.png",
+  "logoUrl": "https://i.ibb.co/GfDZ7JH8/file-00000000bb00820abe21b502b70fcd96.png",
   "maintenanceMode": false,
   "brandName": "HDMosul🚀",
   "footer1": "👑 • BYD STORE • 2026",
