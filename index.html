@@ -1,8 +1,10 @@
-<html lang="ar" dir="rtl"><head>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 <title>BYD STORE • VIP</title>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <style>
 /* ================== الثيم الجديد: بنفسجي ملكي + ذهبي ================== */
@@ -608,8 +610,8 @@ button:hover {
 </header>
 
 <div class="info-pill">
-  <div id="liveClock">7:38:33 PM</div>
-  <div id="liveDate">الاثنين 2026-09-28</div>
+  <div id="liveClock">--:--:--</div>
+  <div id="liveDate">----</div>
   <div class="dhikr">⚽ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ ⚽</div>
 </div>
 
@@ -622,16 +624,16 @@ button:hover {
 </div>
 
 <div class="tabs-container">
-  <button class="tab-btn" onclick="switchTab(event, 'apps-tab')">💎 الكل</button>
-  <button class="tab-btn active" onclick="switchTab(event, 'store-tab')">🏆 المتجر</button>
+  <button class="tab-btn active" onclick="switchTab(event, 'apps-tab')">💎 الكل</button>
+  <button class="tab-btn" onclick="switchTab(event, 'store-tab')">🏆 المتجر</button>
 </div>
 
-<div id="apps-tab" class="tab-content" style="display: none;">
-  <div class="grid" id="appsGrid"><div class="empty-state"><i class="fas fa-box-open"></i>لا توجد تطبيقات حالياً<br><span style="font-size:0.9rem;opacity:0.8;font-weight:500;">سيتم إضافة التطبيقات قريباً</span></div></div>
+<div id="apps-tab" class="tab-content" style="display: block;">
+  <div class="grid" id="appsGrid"></div>
 </div>
 
-<div id="store-tab" class="tab-content" style="display: block;">
-  <div class="grid" id="storeGrid"><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/Tqd3QMfz/IMG-20260422-175208-052.jpg" alt="مكتبة التطبيقات PRO"></div><div class="title">مكتبة التطبيقات PRO</div><div class="desc">BYD STORE🚀🚀 • المتجر المتكامل من Android_AppsX يعمل بشكل صفحة وايب</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/tMgcg6tc/file-00000000e70c7243a5ef35f19d97eabc.png" alt="مكتبة التطبيقات Lite"></div><div class="title">مكتبة التطبيقات Lite</div><div class="desc">BYD STORE🚀🚀 • Lite تطبيقات منوعة يعمل بشكل صفحة وايب</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/PvT20Ryk/aptoide-tv-icon.webp" alt="Android TV متجر"></div><div class="title">Android TV متجر</div><div class="desc">متجر تطبيقات مثل سوق بلي مجاني لأجهزة شاشات والتيفي بوكس وشاشات السيارات. BYD STORE🚀🚀 •</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/hRBZsrch/aurora-store.webp" alt="AuroraStore"></div><div class="title">AuroraStore</div><div class="desc">متجر تطبيقات مثل سوق بلي مجاني لأجهزة شاشات والتيفي بوكس وشاشات السيارات. BYD STORE🚀🚀 •</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/GfvKFPvh/emotn-store.webp" alt="متجر إيموتن"></div><div class="title">متجر إيموتن</div><div class="desc">متجر تطبيقات مثل سوق بلي مجاني لأجهزة شاشات والتيفي بوكس وشاشات السيارات BYD STORE🚀🚀 •</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon"><img src="https://i.ibb.co/9mt5JVRP/1776878144246-edit-129489298127946.png" alt="مباريات اليوم اضغط"></div><div class="title">مباريات اليوم اضغط</div><div class="desc">يمكنك معرفة مباريات اليوم بشكل تلقائيا BYD STORE🚀🚀</div><button class="luxury-btn" style="pointer-events: none;">تحميل</button></div><div class="card store-card" tabindex="0"><div class="timer-overlay"><div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div></div><div class="app-icon support-icon"><img src="https://i.ibb.co/pjX4mGr7/Screenshot-20260928-191932.jpg" alt="الدعم الفني"></div><div class="title">الدعم الفني</div><div class="desc">يمكنك تواصل معنا عبر تلكرام</div><button class="luxury-btn" style="pointer-events: none;">امسح باركود</button></div></div>
+<div id="store-tab" class="tab-content" style="display: none;">
+  <div class="grid" id="storeGrid"></div>
 </div>
 
 <footer>
@@ -680,7 +682,7 @@ button:hover {
 
     <div id="appListSection" style="display: block;">
       <div class="section-title">📋 التطبيقات الحالية</div>
-      <div id="appListContainer" style="max-height: 300px; overflow-y: auto; padding: 5px;"><div style="text-align:center;opacity:0.6;padding:15px;font-weight:700;">لا توجد تطبيقات</div></div>
+      <div id="appListContainer" style="max-height: 300px; overflow-y: auto; padding: 5px;"></div>
     </div>
 
     <div id="editFormContainer" class="edit-form-container" style="display: none;">
@@ -711,12 +713,12 @@ button:hover {
 
     <div id="storeListSection" style="display: block;">
       <div class="section-title">📋 المتاجر الحالية</div>
-      <div id="storeListContainer" style="max-height: 300px; overflow-y: auto; padding: 5px;"><div class="app-list-item"><span>مكتبة التطبيقات PRO</span><div class="app-list-actions"><button class="edit-app-btn"><i class="fas fa-edit"></i></button><button class="delete-app-btn"><i class="fas fa-trash"></i></button></div></div><div class="app-list-item"><span>مكتبة التطبيقات Lite</span><div class="app-list-actions"><button class="edit-app-btn"><i class="fas fa-edit"></i></button><button class="delete-app-btn"><i class="fas fa-trash"></i></button></div></div><div class="app-list-item"><span>Android TV متجر</span><div class="app-list-actions"><button class="edit-app-btn"><i class="fas fa-edit"></i></button><button class="delete-app-btn"><i class="fas fa-trash"></i></button></div></div><div class="app-list-item"><span>AuroraStore</span><div class="app-list-actions"><button class="edit-app-btn"><i class="fas fa-edit"></i></button><button class="delete-app-btn"><i class="fas fa-trash"></i></button></div></div><div class="app-list-item"><span>متجر إيموتن</span><div class="app-list-actions"><button class="edit-app-btn"><i class="fas fa-edit"></i></button><button class="delete-app-btn"><i class="fas fa-trash"></i></button></div></div><div class="app-list-item"><span>مباريات اليوم اضغط</span><div class="app-list-actions"><button class="edit-app-btn"><i class="fas fa-edit"></i></button><button class="delete-app-btn"><i class="fas fa-trash"></i></button></div></div><div class="app-list-item"><span>الدعم الفني</span><div class="app-list-actions"><button class="edit-app-btn"><i class="fas fa-edit"></i></button><button class="delete-app-btn"><i class="fas fa-trash"></i></button></div></div></div>
+      <div id="storeListContainer" style="max-height: 300px; overflow-y: auto; padding: 5px;"></div>
     </div>
 
     <div id="editStoreFormContainer" class="edit-form-container" style="display: none;">
       <h3><i class="fas fa-store-alt"></i> تعديل متجر</h3>
-      <input type="hidden" id="editStoreIndex" value="6">
+      <input type="hidden" id="editStoreIndex" value="">
       <input type="text" id="editStoreName" placeholder="اسم المتجر">
       <textarea id="editStoreDesc" placeholder="الوصف" rows="2"></textarea>
       <input type="text" id="editStoreLink" placeholder="رابط المتجر">
@@ -756,59 +758,58 @@ function extractImageUrl(input) {
 var DEFAULT_APPS = [];
 
 var DEFAULT_STORE = [
-    {
-        "name": "مكتبة التطبيقات PRO",
-        "desc": "HDMosul🚀 • المتجر المتكامل من Android_AppsX يعمل بشكل صفحة وايب",
-        "link": "https://iraqapps.github.io/tvapps/",
-        "icon": "https://i.ibb.co/Tqd3QMfz/IMG-20260422-175208-052.jpg"
-    },
-    {
-        "name": "مكتبة التطبيقات Lite",
-        "desc": "HDMosul🚀 • Lite تطبيقات منوعة يعمل بشكل صفحة وايب",
-        "link": "https://401740.hala-web.com/",
-        "icon": "https://i.ibb.co/tMgcg6tc/file-00000000e70c7243a5ef35f19d97eabc.png"
-    },
-    {
-        "name": "Android TV متجر",
-        "desc": "متجر تطبيقات مثل سوق بلي مجاني لأجهزة شاشات والتيفي بوكس وشاشات السيارات. HDMosul🚀 •",
-        "link": "https://tv.aptoide.com/howtoinstall.html",
-        "icon": "https://i.ibb.co/PvT20Ryk/aptoide-tv-icon.webp"
-    },
-    {
-        "name": "AuroraStore",
-        "desc": "متجر تطبيقات مثل سوق بلي مجاني لأجهزة شاشات والتيفي بوكس وشاشات السيارات. HDMosul🚀 •",
-        "link": "https://auroraoss.com/downloads/AuroraStore/Latest/latest.apk",
-        "icon": "https://i.ibb.co/hRBZsrch/aurora-store.webp"
-    },
-    {
-        "name": "متجر إيموتن",
-        "desc": "متجر تطبيقات مثل سوق بلي مجاني لأجهزة شاشات والتيفي بوكس وشاشات السيارات HDMosul🚀 •",
-        "link": "https://d.apkpure.net/b/APK/com.overseas.store.appstore?version=latest",
-        "icon": "https://i.ibb.co/GfvKFPvh/emotn-store.webp"
-    },
-    {
-        "name": "مباريات اليوم اضغط",
-        "desc": "يمكنك معرفة مباريات اليوم بشكل تلقائيا HDMosul🚀",
-        "link": "https://jdwel.com/today/",
-        "icon": "https://i.ibb.co/9mt5JVRP/1776878144246-edit-129489298127946.png"
-    },
-    {
-        "name": "الدعم الفني",
-        "desc": "يمكنك تواصل معنا عبر تلكرام",
-        "link": "t.me/HDMosul",
-        "icon": "https://i.ibb.co/pjX4mGr7/Screenshot-20260928-191932.jpg"
-    }
-]
+  {
+    "name": "مكتبة التطبيقات PRO",
+    "desc": "HDMosul🚀 • المتجر المتكامل من Android_AppsX يعمل بشكل صفحة وايب",
+    "link": "https://iraqapps.github.io/tvapps/",
+    "icon": "https://i.ibb.co/Tqd3QMfz/IMG-20260422-175208-052.jpg"
+  },
+  {
+    "name": "مكتبة التطبيقات Lite",
+    "desc": "HDMosul🚀 • Lite تطبيقات منوعة يعمل بشكل صفحة وايب",
+    "link": "https://401740.hala-web.com/",
+    "icon": "https://i.ibb.co/tMgcg6tc/file-00000000e70c7243a5ef35f19d97eabc.png"
+  },
+  {
+    "name": "Android TV متجر",
+    "desc": "متجر تطبيقات مثل سوق بلي مجاني لأجهزة شاشات والتيفي بوكس وشاشات السيارات. HDMosul🚀 •",
+    "link": "https://tv.aptoide.com/howtoinstall.html",
+    "icon": "https://i.ibb.co/PvT20Ryk/aptoide-tv-icon.webp"
+  },
+  {
+    "name": "AuroraStore",
+    "desc": "متجر تطبيقات مثل سوق بلي مجاني لأجهزة شاشات والتيفي بوكس وشاشات السيارات. HDMosul🚀 •",
+    "link": "https://auroraoss.com/downloads/AuroraStore/Latest/latest.apk",
+    "icon": "https://i.ibb.co/hRBZsrch/aurora-store.webp"
+  },
+  {
+    "name": "متجر إيموتن",
+    "desc": "متجر تطبيقات مثل سوق بلي مجاني لأجهزة شاشات والتيفي بوكس وشاشات السيارات HDMosul🚀 •",
+    "link": "https://d.apkpure.net/b/APK/com.overseas.store.appstore?version=latest",
+    "icon": "https://i.ibb.co/GfvKFPvh/emotn-store.webp"
+  },
+  {
+    "name": "مباريات اليوم اضغط",
+    "desc": "يمكنك معرفة مباريات اليوم بشكل تلقائيا HDMosul🚀",
+    "link": "https://jdwel.com/today/",
+    "icon": "https://i.ibb.co/9mt5JVRP/1776878144246-edit-129489298127946.png"
+  },
+  {
+    "name": "الدعم الفني",
+    "desc": "يمكنك ابلاغ عن طريق الايميل\npqkbgfcn688@gmail.com",
+    "link": "https://mail.google.com/mail/?view=cm&fs=1&to=pqkbgfcn688@gmail.com&su=ابلاغ%20عن%20مشكلة%20في%20متجر%20BYD%20STORE",
+    "icon": "https://i.ibb.co/Q3kRJr0y/IMG-20260422-183846-311.jpg"
+  }
 ];
 
 var appsList = [], storeList = [];
 var storeSettings = {
-    "name": "BYD STORE",
-    "logoUrl": "https://i.ibb.co/GfDZ7JH8/file-00000000bb00820abe21b502b70fcd96.png",
-    "maintenanceMode": false,
-    "brandName": "BYD STORE🚀",
-    "footer1": "👑 • BYD STORE • 2026",
-    "footer2": "حقوق متجر @HDMosul"
+  "name": "BYD STORE",
+  "logoUrl": "https://i.ibb.co/GfDZ7JH8/file-00000000bb00820abe21b502b70fcd96.png",
+  "maintenanceMode": false,
+  "brandName": "BYD STORE🚀",
+  "footer1": "👑 • BYD STORE • 2026",
+  "footer2": "حقوق متجر @HDMosul"
 };
 var currentEditIndex = null;
 var currentStoreEditIndex = null;
@@ -860,8 +861,7 @@ function createAppCard(app, isStore) {
     ov.innerHTML = '<div class="prayer-msg">⚽ لا تجعل المشاهدة تلهيك عن الصلاة وذكر الله ⚽</div><div class="count-down">4</div>';
     card.appendChild(ov);
   }
-  var isSupportCard = /الدعم/.test(app.name || '');
-  var iconDiv = document.createElement('div'); iconDiv.className = 'app-icon' + (isSupportCard ? ' support-icon' : '');
+  var iconDiv = document.createElement('div'); iconDiv.className = 'app-icon';
   var img = document.createElement('img');
   img.src = extractImageUrl(app.icon) || 'https://via.placeholder.com/100/6D28D9/ffffff?text=APP';
   img.alt = app.name;
@@ -889,7 +889,7 @@ function createAppCard(app, isStore) {
       var btn = document.createElement('button');
       btn.className = 'luxury-btn' + (app.isPremiere ? ' premiere-btn' : '');
       btn.style.pointerEvents = 'none';
-      btn.textContent = app.isPremiere ? '🏆 PREMIERE 🏆' : (isSupportCard ? 'امسح باركود' : 'تحميل');
+      btn.textContent = app.isPremiere ? '🏆 PREMIERE 🏆' : 'تحميل';
       card.appendChild(btn);
     }
   }
@@ -1175,6 +1175,46 @@ window.onload = function() {
 })();
 </script>
 
+<!-- ====== سكربت إضافي آمن 100% (لا يلمس أي كود أصلي) ====== -->
+<script>
+(function(){
+  function applySupportStyle() {
+    var titles = document.querySelectorAll('.card .title');
+    for (var i = 0; i < titles.length; i++) {
+      var t = titles[i].textContent || '';
+      if (t.indexOf('الدعم') === -1) continue;
+      var card = titles[i].parentNode;
+      if (!card) continue;
+      var icon = card.querySelector('.app-icon');
+      if (icon && !icon.classList.contains('support-icon')) {
+        icon.classList.add('support-icon');
+      }
+      var btns = card.querySelectorAll('button.luxury-btn');
+      for (var j = 0; j < btns.length; j++) {
+        var txt = (btns[j].textContent || '').trim();
+        if (txt === 'تحميل') {
+          btns[j].textContent = 'امسح باركود';
+        }
+      }
+    }
+  }
+  function init() {
+    applySupportStyle();
+    if (window.MutationObserver) {
+      var grids = document.querySelectorAll('.grid');
+      var obs = new MutationObserver(function(){ applySupportStyle(); });
+      for (var i = 0; i < grids.length; i++) {
+        obs.observe(grids[i], { childList: true });
+      }
+    }
+  }
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    setTimeout(init, 100);
+  } else {
+    window.addEventListener('load', function(){ setTimeout(init, 100); });
+  }
+})();
+</script>
 
-
-</body></html>
+</body>
+</html>
